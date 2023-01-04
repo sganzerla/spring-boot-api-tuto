@@ -16,7 +16,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserService {
 
-    private UserMapper userMapper = new UserMapper();
+    private final UserMapper userMapper = new UserMapper();
 
     private final IUserRepository userRepository;
 

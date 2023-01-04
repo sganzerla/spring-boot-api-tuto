@@ -6,7 +6,7 @@ import com.example.demo.model.dto.User;
 import com.example.demo.model.entity.UserEntity;
 
 public class UserMapper extends BaseMapper<UserEntity, User>{
-    private BankAccountMapper bankAccountMapper = new BankAccountMapper();
+    private final BankAccountMapper bankAccountMapper = new BankAccountMapper();
 
     @Override
     public UserEntity convertToEntity(User dto, Object... args) {

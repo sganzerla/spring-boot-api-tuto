@@ -17,8 +17,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AccountService {
 
-    private BankAccountMapper bankAccountMapper = new BankAccountMapper();
-    private UtilityAccountMapper utilityAccountMapper = new UtilityAccountMapper();
+    private final BankAccountMapper bankAccountMapper = new BankAccountMapper();
+    private final UtilityAccountMapper utilityAccountMapper = new UtilityAccountMapper();
 
     private final IBankAccountRepository bankAccountRepository;
     private final IUtilityAccountRepository utilityAccountRepository;
