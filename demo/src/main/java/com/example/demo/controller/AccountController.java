@@ -27,7 +27,7 @@ public class AccountController {
 
     @GetMapping("/util-account/{account_name}")
     public ResponseEntity getUtilityAccount(@PathVariable("account_name") String providerName) {
-        log.info("Reading utitlity account by ID {}", providerName);
+        log.info("Reading utility account by ID {}", providerName);
         return ResponseEntity.ok(accountService.readUtilityAccount(providerName));
     }
 
